@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #010f0e;
+}
+
+.calulator-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator{
+    background-color: #012622;
+    width: 100%;
+    max-width: 375px;
+    min-height: 640px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    box-shadow: 0 0px 20px 5px rgba(2, 99, 62, 0.589);
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 200px;
+    padding: 1.5rem;
+    text-align: right;
+    color: #ECE5F0;
+    flex-direction: column;
+}
+
+.display .input{
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.display .output{
+    font-size: 2rem;
+    font-weight: bold;
+    width: 100%;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.display .key-operator{
+    color: #E98A15;
+}
+
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.8rem;
+    padding: 1rem;
+    justify-items: center;
+    align-items: center;
+    border: none;
+    border-radius: 1.3rem;
+    align-items: flex-end;
+    background-color: #003B36;
+}
+
+
+
+/*btn styles*/
+button{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.num, .decimal{
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+
+    position: relative;
+    cursor: pointer;
+    display: block;
+
+    background-color: rgb(41, 128, 94);
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: #ECE5F0;
+    transition: ease-out 200ms;
+}
+
+.num:hover, .decimal:hover{
+    background-color: rgb(28, 87, 64);
+    box-shadow: 0 0px 10px rgba(63, 241, 173, 0.781);
+}
+
+.num:active, .decimal:active{
+    background-color: rgb(41, 173, 123);
+    color: #502d03;
+    transition: ease-out 50ms;
+}
+
+.operator, .backspace, .clear{
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+
+    position: relative;
+    cursor: pointer;
+    display: block;
+
+    background-color: rgba(1, 73, 46, 0.5);
+    color: #ff8c00;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: ease-out 200ms;
+}
+
+.operator:hover, .backspace:hover, .clear:hover{
+    background-color: rgba(0, 39, 25, 0.5);
+    box-shadow: 0 0px 10px rgba(255, 140, 0, 0.781);
+}
+.operator:active, .backspace:active, .clear:active{
+    background-color: rgba(83, 170, 138, 0.5);
+    transition: ease-out 100ms;
+}
+
+
+.clear, .backspace{
+    color: #ffe8be;
+    font-weight:600;
+}
+
+.equal{
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 6.2rem;
+    column-span: 2;
+    position: relative;
+    cursor: pointer;
+    display: block;
+
+    background-color: rgb(0, 206, 69);
+    color: #3a1f03;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    transition: ease-out 200ms;
+
+    grid-column: span 2;
+}
+
+.equal:hover{
+    background-color: rgb(1, 156, 53);
+    
+}
+
+.equal:active{
+    background-color: rgb(22, 180, 75);
+    color: #ff8400;
+    border-style: inset;
+    border-color: #003B36;
+    transition: ease-out 50ms;
+}
+
+
