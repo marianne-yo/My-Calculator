@@ -1,3 +1,6 @@
+/* MARIANNE C. BALEN
+   BSIT-WMA4A
+*/
 const displayInput = document.querySelector(".display .input");
 const displayOutput = document.querySelector(".display .output");
 
